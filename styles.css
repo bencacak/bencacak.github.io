@@ -48,7 +48,7 @@ table {
 }
 
 /* End of Eric Meyer reset*/
-/* ------------------------------------- */
+/* ----------------------------------------------------- */
 /* Universal Styles */
 
 * {
@@ -56,8 +56,38 @@ table {
 }
 
 h1 {
-    
+    font-size: 3.5em;
+	font-family: 'Oswald', sans-serif;
+	font-weight: bold;
 }
+h2 {
+	font-family: 'Oswald', sans-serif;
+	font-size: 2.5em;
+	font-weight: normal;
+}
+h3 {
+	font-family: 'Oswald', sans-serif;
+	font-size: 2.0em;
+	font-weight: thin;
+}
+h4 {
+	font-family: 'Lato', sans-serif;
+	font-size: 1.5em;
+	font-weight: bold;
+
+}
+h5 {
+	font-family: 'Lato', sans-serif;
+	font-size: 1em;
+	font-weight: bold;
+	color: darkgray;
+}
+p {
+	font-family: 'Lato', sans-serif;
+	font-weight: normal;
+
+}
+
 
 /* Desktop Media Query */
 
