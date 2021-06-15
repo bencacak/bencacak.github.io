@@ -63,9 +63,9 @@ body {
 	overflow-x: hidden;
 }
 h1 {
-    font-size: 4em;
 	font-family: 'Oswald', sans-serif;
 	font-weight: bold;
+	text-align: center;
 }
 h2 {
 	font-family: 'Oswald', sans-serif;
@@ -96,6 +96,7 @@ p {
 	font-weight: normal;
 	margin: 1% 0;
 	font-size: 1.15em;
+	max-width: 750px;
 }
 a {
 	padding: 10px 20px;
@@ -119,18 +120,54 @@ section {
 .gray {
 	color: gray;
 }
+
 /* Header */
 
 header {
 	width: 100%;
 	background-color: black;
 	padding: 1%;
+	
+}
+.hamburger {
+	display: inline-block;
+	cursor: pointer;
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	z-index: 10;
+}
+.change {
+	position: fixed;
+	top: 5px;
+	left: 5px;
+}
+.bar-1, 
+.bar-2, 
+.bar-3 {
+	width: 35px;
+	height: 5px;
+	background-color: black;
+	margin: 6px 0;
+	transition: 0.375s;
+}
+.change .bar-1 {
+	-webkit-transform: rotate(-45deg) translate(-9px, 6px);
+	transform: rotate(-45deg) translate(-9px, 6px);
+	background-color: whitesmoke;
+}
+.change .bar-2 {
+	opacity: 0;
+}
+.change .bar-3 {
+	-webkit-transform: rotate(45deg) translate(-8px, -8px);
+	transform: rotate(45deg) translate(-8px, -8px);
+	background-color: whitesmoke;
 }
 nav ul {
 	width: 100%;
 	text-align: center;
 	margin: 0 auto;
-	
 }
 nav li {
 	
@@ -138,11 +175,9 @@ nav li {
 	font-family: 'Lato', sans-serif;
 	font-size: 1.5em;
 	font-weight: bold;
-	
 }
 nav li a {
 	transition: background-color 0.375s ease;
-	
 }
 nav li a:link,
 nav li a:visited {
@@ -155,6 +190,30 @@ nav li a:focus {
 }
 .current-page {
 	text-decoration: underline;
+}
+
+/* Banner */
+
+#banner {
+	background-image: url('images/index-banner-image.jpg');
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+}
+#overlay {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .5);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#banner h1 {
+	color: white;
+	text-shadow: black;
 }
 
 /* Footer */
@@ -202,11 +261,19 @@ footer li a:focus {
 /* Desktop Media Query */
 
 @media only screen and (min-width: 1000px) {
+	h1 {
+		font-size: 8em;
+	}
 	article {
 		max-width: 1200px;
+		margin-left: 25%;
+		margin-top: 5%;
 	}
 	nav li {
 		display: inline-block;
+	}
+	#banner {
+		height: 45vw;
 	}
 	footer li {
 		display: inline-block;
@@ -216,11 +283,19 @@ footer li a:focus {
 /* Tablet Media Query */
 
 @media only screen and (min-width: 750px) and (max-width: 999px) {
+	h1 {
+		font-size: 6em;
+	}
 	article {
 		max-width: 999px;
+		margin-left: 15%;
+		margin-top: 5%;
 	}
 	nav li {
 		display: inline-block;
+	}
+	#banner {
+		height: 50vw;
 	}
 	footer li {
 		display: inline-block;
@@ -231,14 +306,21 @@ footer li a:focus {
 /* Mobile Media Query */
 
 @media only screen and (max-width: 749px) {
-	article {
-		max-width: 749px;
+	h1 {
+		font-size: 4em;
 	}
-	
+	article {
+		max-width: 650px;
+		margin: 2%;
+		margin-top: 10%;
+	}
 	nav li {
 		display: block;
 		margin-top: 5%;
 		margin-bottom: 5%;
+	}
+	#banner {
+		height: 60vw;
 	}
 	footer li {
 		display: block;

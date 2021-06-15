@@ -1,16 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
    
     <head>
         <title>Resum&eacute; / Ben Cacak</title>
-        <link href="styles.css" rel="stylesheet" type="text/css">
-        <link rel="preconnect" href="https://fonts.gstatic.com">        
+        <link href="styles.css" rel="stylesheet" type="text/css">                
         <link href="fonts.css" rel="stylesheet" type="text/css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     
     <body>
         <div id="wrapper">
-            <header>
+            <div class="hamburger" onclick="changeHamburger(this)">
+                <div class="bar-1"></div>
+                <div class="bar-2"></div>
+                <div class="bar-3"></div>
+            </div>
+            <header>                
                 <nav>
                     <ul>
                         <li ><a href="index.html">Home</a></li>
@@ -20,10 +26,9 @@
                     </ul>
                 </nav>
             </header>
-            <div id="banner">
-                <h1>Resum&eacute;</h1>
-            </div>
+            
             <article>
+               <h1>Resum&eacute;</h1>
                 <section id="objective">
                     <h2>Objective</h2>
                     <h5>To obtain the position of a junior web developer.</h5>
@@ -98,6 +103,7 @@
                     </ul>
                 </div> 
             </footer>
-        </div>
+        </div>   
     </body>
+    <script src="script.js" async></script>
 </html>

@@ -1,15 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
    
     <head>
         <title>Projects / Ben Cacak</title>
         <link href="styles.css" rel="stylesheet" type="text/css">
         <link href="fonts.css" rel="stylesheet" type="text/css">
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     
     <body>
         <div id="wrapper">
+            <div class="hamburger" onclick="changeHamburger(this)">
+                <div class="bar-1"></div>
+                <div class="bar-2"></div>
+                <div class="bar-3"></div>
+            </div>
             <header>
                 <nav>
                     <ul>
@@ -20,11 +26,15 @@
                     </ul>
                 </nav>
             </header>
-            <div id="banner" role="banner">
-
-            </div>
+            
             <article>
-
+                <h1>Projects</h1>
+                <section id="html-css">
+                    <h2>HTML / CSS Projects</h2>
+                </section>
+                <section id="javascript">
+                    <h2>JavaScript Projects</h2>
+                </section>
             </article>
             <footer>
                 <div id="quote"></div>
@@ -39,4 +49,5 @@
             </footer>
         </div>
     </body>
+    <script src="script.js" async></script>
 </html>
