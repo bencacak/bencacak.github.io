@@ -1,0 +1,148 @@
+/* universal styles */
+
+* {
+    color: seashell;
+    font-size: 22px;
+    font-family: 'Helvetica', sans-serif;
+}
+body{
+    background-color: black;
+}
+h2 {
+    text-align: center;
+    font-size: 2em;
+}
+h3 {
+    text-align: center;
+    font-size: 1.75em;
+}
+h4 {
+    text-align: center;
+    font-size: 1.5em;
+}
+h5{
+    text-align: center;
+    font-size: 1em;
+}
+.main {
+    position: relative;
+    top: 140px;
+    margin: 1% auto;
+}
+.headers {
+    display: block !important;
+    text-align: center;
+}
+
+/* header */
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    height: 69px;
+    border-bottom: 1px solid seashell;
+    padding: 0px 10px;
+    background-color: black;
+}
+
+header img {
+    height: 50px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 20px;
+}
+nav li {
+    margin: 10px;
+}
+
+/* mission */
+
+#mission {
+    width: 1200px;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('img/img-mission-background.webp');
+    background-position: fixed;
+    margin: 1% auto;
+}
+
+#mission-content {
+    display: block;
+    background-color: black;
+    width: 100%;
+    text-align: center;
+}
+
+/* featured teas */
+
+#featured {
+    margin: 1% auto;
+    width: 1000px;
+}
+
+#featured ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: wrap;
+ 
+}
+
+#featured li {
+    padding: 1%;
+    display:    block;
+}
+#featured img {
+    width: 300px;
+    height: 200px;
+}
+
+/* locations */
+
+#locations {
+    margin: 1% auto;
+    background-image: url('img/img-locations-background.webp');
+    background-position: fixed;
+    width: 1200px;
+    height: 500px;
+}
+#locations h2 {
+    padding-top: 3%;
+}
+#locations ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#locations li {
+   display: inline-block;
+}
+.location {
+    background-color: black;
+    width: 300px;
+    text-align: center;
+    margin: 20px;
+}
+
+/* Footer */
+
+h6 {
+    margin-left: 20px;
+    font-size: 0.75em;
+}
+#contact {
+    height: 200px;
+}
+

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>	
+		<meta charset="utf-8">
+	    <title>Creative Writing</title>
+	    <link type="text/css" rel="stylesheet" href="style.css">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	    <link rel="icon" href="img/titlebar.jpg">
+	    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	</head>
+	<body>
+		<div id="wrapper">
+			<header>
+				<div id="title">
+					<h1>Ben Cacak | Writer</h1>
+				</div>
+			</header>
+			<div id="main">
+				<h2>Creative Writing</h2>
+				<img src="img/creative.png" alt="Creative Writing">
+				<a href="docs/gf.pdf" target="blank"><h3>Short Story: Do You Have a Girlfriend?</h3></a>
+				<p>"Do You Have a Girlfriend?" is a short narrative detailing the experience of a young, queer man trying to balance family traditions and values with his new found identity. This piece was wriiten to challenge heteronormative assumptions about family members.</p>
+				<a href="docs/casket.pdf" target="blank"><h3>Free Verse Poem: Casket Fetishism</h3></a>
+				<p>"Casket Fetishism" is one of my best freeverse poems yet. This piece criticizes the marxist idea of commodity fetishism taking place within the death industry. People are pressured to spend lots of money on a casket for their loved one who has passed away with the amount of money they spend coorelating to how much the grieving loved that person. I hope to challenge this with "Casket Fetishism."</p>
+				<a href="docs/simulacra.pdf" target="blank"><h3>Free Verse Poem: Simulacra and Escape</h3></a>
+				<p>"Simulacra and Escape" is free verse poem that I wrote about having an anxiety attack. I critique the tactics that my former shrink told me to use in order to help.</p>
+			</div>
+			<aside>			
+				<a href="#" class="menu-icon" id="ham-icon">&#9776;</a>
+				<nav>				
+					<ul>					
+						<li><a href="index.html">Personal Statement</a></li>
+						<li><a href="academic.html">Academic Writing</a></li>
+						<li><a href="creative.html">>>Creative Writing</a></li>
+						<li><a href="sites.html">Sites Built</a></li>
+						<li><a href="contact.html">Let's Get in Touch!</a></li>
+					</ul>
+					<a href="#" class="menu-icon" id="close-icon">X</a>
+				</nav>	
+			</aside>
+			<footer>
+				<address>
+	            Ben Cacak | <a href="mailto:benjamin . cacak @ wsu . edu">benjamin.cacak@wsu.edu</a>
+	            <time datetime="2018-04-11">| 11 April, 2018</time>
+	        	</address>
+			</footer>
+		</div>
+	<script>
+		// reveal nav
+		document.querySelector("#ham-icon").addEventListener("click", displayNav);
+
+	    // close nav
+		document.querySelector("#close-icon").addEventListener("click", hideNav);
+
+		let navBar = document.querySelector("nav");
+		let hamIcon = document.querySelector("#ham-icon");
+
+		function displayNav() {
+	       navBar.style.display = "block";
+	       hamIcon.style.display = "none";
+		 }
+
+		function hideNav() {
+	       navBar.style.display = "none";
+	       hamIcon.style.display = "block";
+		 }
+	</script>
+	</body>
+</html>

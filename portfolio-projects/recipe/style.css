@@ -1,0 +1,323 @@
+/*Ben Cacak*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* RESET ENDS */
+
+/* Default Styles. Mobile First !!! */
+
+body {
+	border: 1px solid green;
+    font-size: 1em;
+    font-family: helvetica, sans-serif;
+    line-height: 1.15;
+    background-image: url(pics/background.jpg);
+    background-attachment: fixed;
+    background-position: center;  
+}
+
+header {
+	padding: 2%;
+	text-align: center;
+}
+
+h1 {
+    font-size: 3.2em;
+    font-family: 'IBM Plex Serif', serif;
+    font-weight: 700;
+}
+
+img {
+    width: 100%;
+    border: 3px solid #571201;
+    border-radius: 10px;
+}
+
+h2 {
+    font-family: 'IBM Plex Serif', serif;
+    font-size: 1.7em;
+    font-weight: 800;
+    color: black;
+}
+
+p {
+    font-style: italic;
+}
+
+
+.i {
+    font-style: italic;
+    font-weight: bold;
+    color: #571201;
+}
+
+.dir {
+    font-size: 1.35em;
+    color: #571201;
+    font-weight: bold;
+    font-family: 'IBM Plex Serif', serif;
+}
+
+.data {
+    font-weight: bold;
+    color: #571201;
+}
+
+#description {
+    font-size: .95em;
+}
+
+#data {
+	border: 3px solid #571201;
+    border-radius: 15px;
+	margin: 2%;
+	padding: 2%;
+	text-align: center;
+    background-color: #FEEAC8;
+    
+}
+
+
+#data li {
+	margin: 2%;
+	padding: 2%;
+	text-align: center;
+}
+
+#ingredients {
+ 	border: 3px solid #571201;
+    border-radius: 15px;
+ 	margin: 2%;
+	padding: 2%;
+	text-align: center;
+    line-height: 1.5;
+    background-color: #FEEAC8;
+}
+
+#ingredients li {
+	line-height: 2;
+	text-align: left;
+}
+
+#step-box {
+	border: 3px solid #571201;
+    border-radius: 15px;
+	margin: 2%;
+	padding: 2%;
+	text-align: center;
+    background-color: #FEEAC8;
+}
+
+#step-box li {
+	margin: 2%;
+	padding: 2%;
+	text-align: left;
+    line-height: 1.5;
+}
+
+#wrapper {
+	border: 5px solid #571201;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.8);
+    
+}
+
+footer {
+	text-align: center;
+    margin: 1%;
+}
+a:link, a:visited {
+    color: #BF6D04;
+    text-decoration: underline;
+}
+a:hover, a:focus {
+    color: black;
+    text-decoration: underline;
+}
+/* tablet media query */
+
+@media only screen and (min-width: 500px) and (max-width: 700px) {
+
+	#data ul {
+		display: grid;
+		grid-template-columns: 1fr;
+        grid-template-rows: auto;
+		grid-gap: 1%;
+	}
+    
+    #ingredients ul {
+        display: grid;
+        grid-template-rows: auto;
+        grid-gap: 1%;
+    }
+
+	#step-box ul {
+		display: grid;
+		grid-template-areas: 
+			"step-one step-one"
+			"step-two step-three"
+			"step-four step-five"
+			"step-six step-seven";
+		grid-gap: 1%;
+	}
+
+	#step-one {
+		grid-area: step-one;
+	}
+
+	#step-two {
+		grid-area: step-two;
+	}
+
+	#step-three {
+		grid-area: step-three;
+	}
+
+	#step-four {
+		grid-area: step-four;
+	}
+
+	#step-five {
+		grid-area: step-five;
+	}
+
+	#step-six {
+		grid-area: step-six;
+	}
+
+	#step-seven {
+		grid-area: step-seven;
+	}
+
+
+}
+
+/* desktop media query*/
+
+@media only screen and (min-width: 701px) {
+
+	#wrapper {
+		width: 80%;
+		margin: 1% auto;
+		max-width: 950px;
+	}
+    
+    header {
+        display: grid;
+        grid-template-areas: 
+        "title img"
+        "description img";
+        grid-gap: 1%;
+    }
+    
+    #img {
+        grid-area: img;
+    }
+    
+    #title {
+        grid-area: title;
+    }
+    
+    #description {
+        grid-area: description;
+    }
+
+	#data ul {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 1%;
+	}
+    
+     #ingredients ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-gap: 1%;
+    }
+
+	#step-box ul {
+		display: grid;
+		grid-template-areas:
+            "step-one step-one step-one step-two step-two step-two"
+            "step-three step-three step-three step-four step-four step-four"
+            "step-five step-five step-six step-six step-seven step-seven";
+		grid-gap: 1%;
+	}
+    
+    #step-one {
+		grid-area: step-one;
+	}
+
+	#step-two {
+		grid-area: step-two;
+	}
+
+	#step-three {
+		grid-area: step-three;
+	}
+
+	#step-four {
+		grid-area: step-four;
+	}
+
+	#step-five {
+		grid-area: step-five;
+	}
+
+	#step-six {
+		grid-area: step-six;
+	}
+
+	#step-seven {
+		grid-area: step-seven;
+	}
+
+}
+
+/*Ben Cacak*/

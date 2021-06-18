@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>	
+		<meta charset="utf-8">
+		<title>Academic Writing</title>
+		<link type="text/css" rel="stylesheet" href="style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link rel="icon" href="img/titlebar.jpg">
+		<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+		<style>
+		</style>   
+	</head>
+	<body>
+		<div id="wrapper">
+			<header>
+				<div id="title">
+					<h1>Ben Cacak | Writer</h1>
+				</div>
+			</header>
+			<div id="main">
+				<h2>Academic Writing</h2>
+				<img src="img/academic.jpg" alt="Academic Writing">
+				<p>This is a list of my best academic essays that I have written as a part of my course work at Washington State University.</p>
+				<a href="docs/nick-carraway.pdf" target="blank"><h3>Nick Carraway in the Queer '20s</h3></a>
+				<p>"Nick Carraway in the Queer '20s" is a reader-respose criticism of F. Scott Fitzgerald's <em>The Great Gatsby</em>. I am taking a look at the queer implications in Nick Carraway's character and how it reflects the emergence of new identities during the the 1920s in New York.</p>
+				<a href="docs/metamorphosis.pdf" target="blank"><h3>Mental Illness in <em>The Metamorphosis</em></h3></a>
+				<p>In "Mental Illness in <em>The Metamorphosis</em>," I am performing a psychoanalytic criticism of Franz Kafka's <em>Metamorphosis</em>. I take a look at the paralells in Gregor Samsa's mental health and Kafka's own.</p>
+				<a href="docs/conrad.pdf" target="blank"><h3>Waste and Moral Ambiguity in Conrad's <em>Heart of Darkness</em></h3></a>
+				<p>"Waste and Moral Ambiguity in Conrad's <em>Heart of Darkness</em>" is a postcolonial criticism I wrote about the aforementioned novella. I analyze the novella's  commentary on King Leopold's colonization of The Congo.</p>
+				<a href="docs/301-1.pdf" target="blank"><h3>Emphasized Femininity in Disney's Trifecta</h3></a>
+				<p>"Emphasized Femininity in Disney's Trifecta" looks critically at messages about emphasized femininity in Walt Disney's trio of original princess films: <em>Snow White and the Seven Dwarfs</em>, <em>Cinderella</em>, and <em>Sleeping Beauty</em>.</p>
+				<a href="docs/301-2.pdf" target="blank"><h3>Disney's Racism and the Cycle of Oppression</h3></a>
+				<p>I analyze the films <em>Song of the South</em>, <em>Mulan</em>, and <em>Pocahontas</em> for hidden racist messages in the essay "Disney's Racism and the Cycle of Oppression."</p>
+				<a href="docs/301-3.pdf" target="blank"><h3>Villainy and Characters of Color in Canonized Disney Cinema</h3></a>
+				<p>In "Villainy and Characters of Color in Canonized Disney Cinema," I look at the perpetual use of characters of color as villains in popular Disney films up to the year 2000. This was a synthesis project where I developed my own ideas that were not mentioned in my sources.</p>
+				<a href="docs/annotated.pdf" target="blank"><h3>Villainy and Characters of Color in Canonized Disney Cinema: Annotated Bibliography</h3></a>
+				<p>This is my annotated bibliography for the aforementioned essay.</p>
+				<a href="docs/ce338.pdf" target="blank"><h3><em>Wonder Woman </em>for White Women</h3></a>
+				<p>In "<em>Wonder Woman</em> for White Women," I take a look at Dr. Wlliam Moulton Marston's first editions of <em>Wonder Woman</em> and the racism in it. I analyze its connections to the first wave of feminism and its use of characters of color.</p>  
+				<a href="docs/buffy.pdf" target="blank"><h3>Race, Class, Gender, and Sexuality in <em>Buffy the Vampire Slayer</em></h3></a>
+				<p>"Race, Class, Gender, and Sexuality in <em>Buffy the Vampire Slayer</em>" is an intersectional analysis of messages about race, class, gender, and sexuality in Joss Whedon's hit television series <em>Buffy the Vampire Slayer</em>.</p>
+				<a href="docs/autobio.pdf" target="blank"><h3>Being Both the <em>Other</em> and the Dominant</h3></a>
+				<p>"Being Both the <em>Other</em> and the Dominant" is an autobiographical essay where I take an intersectional approach to my experiences growing up. I analyze how this has influenced who I am today and my power, privilege, and inequity.</p>
+				<a href="docs/nursejackie.pdf" target="blank"><h3>Reflection and Reinforcement in Showtime's <em>Nurse Jackie</em></h3></a>
+				<p>"Reflection and Reinforcement in Showtime's <em>Nurse Jackie</em>" is a critical journal where I breakdown the plots in the episodes of the first season of the hit Showtime series <em>Nurse Jackie</em> and it is both a reflection and reinforcement of institutional oppression.</p>
+			</div>
+			<aside>		
+				<a href="#" class="menu-icon" id="ham-icon">&#9776;</a>
+				<nav>				
+					<ul>					
+						<li><a href="index.html">Personal Statement</a></li>
+						<li><a href="academic.html">>>Academic Writing</a></li>
+						<li><a href="creative.html">Creative Writing</a></li>
+						<li><a href="sites.html">Sites Built</a></li>
+						<li><a href="contact.html">Let's Get in Touch!</a></li>
+					</ul>
+					<a href="#" class="menu-icon" id="close-icon">X</a>
+				</nav>	
+			</aside>
+			<footer>			
+				<address>
+				Ben Cacak | <a href="mailto:benjamin . cacak @ wsu . edu">benjamin.cacak@wsu.edu</a>
+				<time datetime="2018-04-11">| 11 April, 2018</time>
+				</address>
+			</footer>
+		</div>
+	<script>
+		// reveal nav
+		document.querySelector("#ham-icon").addEventListener("click", displayNav);
+
+		// close nav
+		document.querySelector("#close-icon").addEventListener("click", hideNav);
+
+		let navBar = document.querySelector("nav");
+		let hamIcon = document.querySelector("#ham-icon");
+
+		function displayNav() {
+		navBar.style.display = "block";
+		hamIcon.style.display = "none";
+		}
+
+		function hideNav() {
+		navBar.style.display = "none";
+		hamIcon.style.display = "block";
+		}
+	</script>
+	</body>
+</html>

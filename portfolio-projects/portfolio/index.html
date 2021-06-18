@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>	
+		<meta charset="utf-8">
+	    <title>Ben Cacak</title>
+	    <link type="text/css" rel="stylesheet" href="style.css">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	    <link rel="icon" href="img/titlebar.jpg">
+	    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	    <style>
+			img {
+				width: 50%;
+				margin: 2% auto;
+				display: block;
+			}
+		</style>    
+	</head>
+	<body>
+		<div id="wrapper">
+			<header>
+				<div id="title">
+					<h1>Ben Cacak | Writer</h1>
+				</div>
+			</header>
+			<div id="main">
+				<h2>Hello, There!</h2>
+				<img src="img/myself.jpg" alt="A picture of myself">
+				<p>Hello, my name is Ben Cacak. I guess I could say that I am a writer. I like using words to convey my thoughts. I graduated Clark College in 2017 with my Associate in Art in conjunction with a Women’s Studies certificate. I am at Washington State University Vancouver obtaining my Bachelor’s of Arts in the Humanities with concentrations in English and Women’s Studies.</p>
+				<p>On this website, I have uploaded some of my best academic essays and creative writing projects that I have written. Feel free to peruse at your pleasure</p>
+			</div>
+			<aside>			
+				<a href="#" class="menu-icon" id="ham-icon">&#9776;</a>
+				<nav>				
+					<ul>					
+						<li id="index"><a href="index.html">>>Personal Statement</a></li>
+						<li id="academic"><a href="academic.html">Academic Writing</a></li>
+						<li id="creative"><a href="creative.html">Creative Writing</a></li>
+						<li id="sites"><a href="sites.html">Sites Built</a></li>
+						<li id="contact"><a href="contact.html">Let's Get in Touch!</a></li>
+					</ul>
+					<a href="#" class="menu-icon" id="close-icon">X</a>
+				</nav>	
+			</aside>
+			<footer>			
+				<address>
+	            Ben Cacak | <a href="mailto:benjamin . cacak @ wsu . edu">benjamin.cacak@wsu.edu</a>
+	            <time datetime="2018-04-11">| 11 April, 2018</time>
+	        	</address>
+			</footer>
+		</div>
+	<script>
+		// reveal nav
+		document.querySelector("#ham-icon").addEventListener("click", displayNav);
+
+	    // close nav
+		document.querySelector("#close-icon").addEventListener("click", hideNav);
+
+		let navBar = document.querySelector("nav");
+		let hamIcon = document.querySelector("#ham-icon");
+
+		function displayNav() {
+	       navBar.style.display = "block";
+	       hamIcon.style.display = "none";
+		 }
+
+		function hideNav() {
+	       navBar.style.display = "none";
+	       hamIcon.style.display = "block";
+		 }
+	</script>
+	</body>
+</html>
