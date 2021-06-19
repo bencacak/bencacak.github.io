@@ -71,20 +71,19 @@ h1 {
 h2 {
 	font-family: 'Oswald', sans-serif;
 	font-size: 3em;
-	font-weight: normal;
+	font-weight: bold;
 	margin: 1% 0;
 }
 h3 {
 	font-family: 'Oswald', sans-serif;
 	font-size: 2.25em;
-	font-weight: thin;
+	font-weight: normal;
 }
 h4 {
-	font-family: 'Lato', sans-serif;
+	font-family: 'Oswald', sans-serif;
 	font-size: 1.75em;
-	font-weight: bold;
 	margin: 1% 0;
-	color: black;
+	color: #808080;
 }
 h5 {
 	font-family: 'Lato', sans-serif;
@@ -131,10 +130,15 @@ section {
 	margin: 0 auto;
 }
 .accent-color {
-	color: #b3b3b3;
+	color: #808080;
 }
 .project h5 {
 	display: inline-block;
+}
+img {
+	max-width: 750px;
+	border: 20px solid black;
+	margin-top: 5%;
 }
 
 /* Header */
@@ -143,7 +147,6 @@ header {
 	width: 100%;
 	background-color: black;
 	padding: 1%;
-	
 }
 .hamburger {
 	display: inline-block;
@@ -232,6 +235,28 @@ nav li a:focus {
 	text-shadow: black;
 }
 
+/* Index SVGs */
+aside {
+	text-align: center;
+	width: 100%;
+	margin: 0 auto;
+}
+#icons {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: wrap;
+	margin-bottom: 5%;
+	
+}
+
+#icons li {
+	max-width: 128px;
+	max-height: 128px;
+	margin: 2%
+}
+
+
 /* Footer */
 
 footer h5 {
@@ -246,12 +271,15 @@ footer {
 	background-color: black;
 	color: whitesmoke;
 	width: 100%;
-	min-height: 100px;
+	height: 10%;
+	min-height: 150px;
+	max-height: 400px;
 	text-align: center;
 	position: relative;
 	bottom: 0px;
 	left: 0px;
 	padding: 1%;
+	padding-top: 5%;
 }
 footer ul {
 	margin: 0 auto;
@@ -337,6 +365,12 @@ footer li a:focus {
 		max-width: 650px;
 		margin: 2%;
 		margin-top: 10%;
+	}
+	img {
+		margin: 1% auto;
+		margin-top: 5%;
+		max-width: 480px;
+		width: 90vw;
 	}
 	nav li {
 		display: block;
