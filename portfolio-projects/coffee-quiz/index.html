@@ -1,0 +1,85 @@
+<!DOCTYPE html lang="en">
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+	<title>What Thing Are You Quiz</title>
+	<link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<h1>What type of coffee are you?</h1>
+		<div id="main"> 
+		<h2>Complete the quize below to find out what type of coffee beverage your are.</h2>		
+		<form name="quiz">		
+			<section class="questions" id="quest1">
+			<h3>What is your favorote season of the year?<br></h3>
+			<div>  
+				<input type="radio" name="question1" value="1">Winter
+			</div>
+			<div>
+				<input type="radio" name="question1" value="2">Fall
+			</div>
+				<div>
+					<input type="radio" name="question1" value="3">Spring and Summer
+				</div>
+				<div>
+					<input type="radio" name="question1" value="4">Who really cares?
+				</div>	
+			</section>		
+			<section class="questions" id="quest2">
+				<h3>How would you describe your personality?<br></h3>
+				<div>  
+					<input type="radio" name="question2" value="1">Neurotic
+				</div>
+				<div>
+					<input type="radio" name="question2" value="2">Playful, but you mean business
+				</div>
+				<div>
+					<input type="radio" name="question2" value="3">Cautious
+				</div>
+				<div>
+					<input type="radio" name="question2" value="4">Loosy goosey
+				</div>
+			</section>				
+			<section class="questions" id="quest3">
+				<h3>What would you rather do in your spare time?<br></h3>
+
+				<div>  
+					<input type="radio" name="question3" value="1">Work
+				</div>
+				<div>
+					<input type="radio" name="question3" value="2">Go Outside  
+				</div>
+				<div>
+					<input type="radio" name="question3" value="3">Watch Television
+				</div>
+				<div>
+					<input type="radio" name="question3" value="4">Hang with Friends
+				</div>				
+			</section>			
+			<section class="questions" id="quest4">
+				<h3>What is your favorite type of film?<br></h3>
+				<div>  
+					<input type="radio" name="question4" value="1">Art Film
+				</div>
+				<div>
+					<input type="radio" name="question4" value="2">Documentary
+				</div>
+				<div>
+					<input type="radio" name="question4" value="3">Drama
+				</div>
+				<div>
+					<input type="radio" name="question4" value="4">Comedy
+				</div>
+			</section>
+				<div id="submit"> 
+					<input type="button" value="What are You?" onclick="computeForm(this.form)">
+				</div> 
+				
+				<div id="reset"> 
+					<input type="button" value="Reset" onclick="reset(this.form)">
+				</div> 
+		</form>
+		</div>
+		<div id="answer"></div>
+		<script src="script.js"></script>
+	</body>
+</html>

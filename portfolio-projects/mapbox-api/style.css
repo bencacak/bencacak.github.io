@@ -1,0 +1,173 @@
+/*Ben Cacak*/
+
+ http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+} 
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	font-family: 'Calibri', san-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* RESET ENDS */
+
+/* Desktop Styles */
+
+/*	display: grid;
+	grid-template-areas: 
+	"header map-container map-container"
+	"main map-container map-container";
+}*/
+
+body {
+	background-color: #df7b1d;
+}
+
+aside {
+	background-color: #df7b1d ;
+}
+
+h1{
+	font-family: 'Oswald', san-serif;
+	font-size: 3em;
+}
+
+h2 {
+	font-family: 'Oswald', san-serif;
+	font-size: 2.25em;
+}
+
+h3 {
+	font-family: 'Padauk', san-serif;
+	font-size: 1.75em;
+}
+
+p {
+	font-family: 'Padauk', san-serif;
+	font-size: 1.1em;
+	line-height: 1.25;
+}
+
+img {
+	max-width: 500px;
+	position: center;
+}
+
+button {
+	background-color: #433f40;
+	border: none;
+	display: all;
+	color: white;
+	border-bottom: 2px #df7b1d solid;
+	border-top: 2px #df7b1d solid;
+}
+
+a:link, a:visited  {
+	color: white;
+	text-decoration: underline;
+}
+
+a:hover, a:focus {
+	color: lightgrey;
+	text-decoration: underline;
+}
+
+#header {
+	grid-area: header;
+	padding: 1%;
+	background-color: #4b7e9d;
+	color: white;
+
+
+}
+
+#main {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 40%;
+	height: 100%
+	overflow: scroll;
+}
+
+#map-container {
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 60%;
+	height: 100%;
+	grid-area: map-container;
+	padding: none;
+}
+
+#map {
+	width: 100%;
+	height: 100%;
+}
+
+#control-buttons {
+	text-align: center;
+}
+
+#disclaimer {
+	font-size: .9em;
+	color: black;
+}
+
+.location {
+	padding: 2%;
+	background-color: #433f40;
+	color: white;
+}
+
+
+.marker {
+        background-image: url(img/icon.png);
+        background-size: cover;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
