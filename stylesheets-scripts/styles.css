@@ -57,7 +57,7 @@ table {
 html,
 body {
 	line-height: 1.15;
-	font-size: 'Lato', sans-serif;
+	font-family: 'Lato', sans-serif;
 	background-color: whitesmoke;
 	max-width: 100%;
 	overflow-x: hidden;
@@ -232,7 +232,7 @@ nav li a:focus {
 
 #banner h1 {
 	color: white;
-	text-shadow: black;
+	text-shadow: -2px -2px black;
 }
 
 /* Index SVGs */
