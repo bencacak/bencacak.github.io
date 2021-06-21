@@ -1,0 +1,36 @@
+#submit  {
+    margin-top: 20px; 
+}
+#answer  {
+    display: none;
+    position: fixed; 
+    right: 30%; 
+    top: 30%; 
+    width: 30%; 
+    border: 2px solid black; 
+    padding: 5%; 
+    text-align: center; 
+    background-color: white
+}
+.radio {
+    padding: 1%;
+}
+img {
+    max-height: 200px;
+    max-width: 200px;
+}
+
+body {
+    font-family: 'arial', sans-serif;
+    padding: 1%;
+    background-color: tan;
+}
+
+h1{
+    text-align: center;
+}
+
+h2, h3 {
+    padding: 1%;
+    padding-right: none;
+}

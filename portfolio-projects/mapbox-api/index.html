@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+	<link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet'>
+	<link type="text/css" rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Oswald|Padauk" rel="stylesheet">
+	<title>Campuses of Clark College</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="main">
+            <div id="header">        
+                <h1>The Campuses of Clark College</h1>
+                <h3>A Tour of Southwest Washington's Local Community College</h3> 
+            </div>
+        <aside> 
+            <div id="control-buttons">
+                <button id="#reset"><p>Reset Map</p></button>
+            </div>
+        </aside>   
+        <div id="mainCampus" class="location">
+            <h2>Clark College Main Campus</h2>
+            <img src="img/main.jpg" alt="Main Campus">
+            <p>This is Clark College's main campus located just on the other side of Interstate 5 from Downtown Vancouver. Clark College occupies either side of a signifigant stretch of Fort Vancouver Way between Mill Plain and Fourth Plain. This is by far the largest of all Clark College Campuses, containing over 20 buildings that host a variety of classes and students services. This is my favorite location. </p>
+            <p>Source: <a href="http://www.clark.edu/international/housing.php" target="blank">Clark.edu</a></p>
+        </div>
+        <div id="ccw" class="location">
+            <h2>Clark College at WSU Vancouver</h2>
+            <img src="img/ccw.jpg" alt="Clark College at WSU Vancouver">
+            <p>This a small, single-building campus of Clark College that offers courses to Clark College Students at city college prices on a university campus. Please note: if you plan on attending classes on this campus, you must pay for a parking pass to park in WSU Vancouver Ggeen lot for the quarter. It cost quite a bit money. There is also a Vancouver School District charter school located in this building. </p><p>Sources: <a href="http://www.clark.edu/about/visitors-guide/getting-to-clark/ccw/index.php" target="blank">Clark.edu,</a> <a href="http://www.clark.edu/ccw/center.php" target="blank">Clark.edu</a></p>
+        </div>
+        <div id="ctc" class="location">
+            <h2>Clark College at Columbia Tech Center</h2>
+            <img src="img/ctc.jpg" alt="Clark College at Columbia Tech Center">
+            <p>Columbia Tech Center is what I would call Clark College's largest satellite campus. This can be found in Camas, Washington on the far east end of Mill Plain. Clark College at Columbia Tech Center offers a variety of programs to choose from. So if you live in East County, you won't have to drive far to get to class.</p>
+            <p>Source: <a href="http://www.clark.edu/about/visitors-guide/getting-to-clark/ctc/index.php" target="blank">Clark.edu</a></p>
+        </div>
+        <div id="cce" class="location">
+            <h2>Clark College Economic and Community Development</h2>
+            <img src="img/ecd.jpg" alt="Clark College Economic and Community Development">
+            <p>This campus location serves as Clark College's testing facility as well as non-credit classes. This campus can be found on the second floor of the Columbia Bank building in Downtown Vancouver.</p>
+            <p>Source: <a href="https://ecd.clark.edu/about/campus-locations.php" target="blank">Clark.edu</a></p>
+        </div>
+        <div id="boschma" class="location">
+            <h2>Future Clark College Location at Boschma Farms</h2>
+            <img src="img/bos.jpg" alt="Future Clark College Location at Boschma Farms">
+            <p>Clark College is set to open it's next campus at Boschma Farms in Ridgefield, Wasington. The land was donated by dairy farmers and Dutch emigrants Hank and Bernice Boschma, who accordding to Clark College, completed their citizenship course at Clark College to gain citizenship in the United States. This campus location is set to offer a variety of programs. Construction of this project is set to start in 2020.</p>
+            <p>Source: <a href="http://www.clark.edu/about/visitors-guide/getting-to-clark/boschma/index.php" target="blank">Clark.edu</a></p>
+        </div>
+        <div id="ccg" class="location">
+            <h2>Former Clark College Location in Bingen, WA</h2>
+            <img src="img/ccg.jpg" alt="Former Clark College Location in Bingen, WA">
+            <p>The Clark College location set in Bingen, Washington was meant to serve a primarily isolated section of Washington State with higher education. The campus opened up in winter quarter of 2015. Clark College disconinued offering courses at this campus location in June of 2016 just over a year after opening due to low enrollement rates. </p>
+            <p>Source: <a href="https://www.columbian.com/news/2014/nov/22/clark-college-gorge-open-house/" target="blank">Columbian.com</a></p>
+        </div>
+            <footer>
+                <address>
+                Ben Cacak | <a href="mailto:benjamin . cacak @ wsu . edu">benjamin.cacak@wsu.edu</a>
+                <time datetime="2018-03-06">| 6 Mark, 2019</time>
+                </address>
+                <p id="disclaimer">*Please note that this is not an official website of Clark College but nearly an alumni's project to display knowledge of Javascript and jQuery.</p>
+            </footer>
+        </div>
+        <div id="map-container">
+            <div id="map">               
+                <!-- This is where the map lives. Teehee. -->
+            </div>	
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
