@@ -136,7 +136,7 @@ section {
 	display: inline-block;
 }
 img {
-	max-width: 750px;
+	max-width: 600px;
 	border: 20px solid black;
 	margin-top: 5%;
 }
@@ -235,25 +235,24 @@ nav li a:focus {
 	text-shadow: -2px -2px black;
 }
 
-/* Index SVGs */
+/* Index icons */
 aside {
-	text-align: center;
+	text-align: left;
 	width: 100%;
 	margin: 0 auto;
 }
-#icons {
-	display: inline-flex;
-	justify-content: center;
-	align-items: center;
-	flex-flow: wrap;
-	margin-bottom: 5%;
-	
+aside ul {
+	margin: 1% 0;
 }
-
-#icons li {
-	max-width: 128px;
-	max-height: 128px;
-	margin: 2%
+aside li {
+	margin: 2%;
+	display: inline-block
+}
+i {
+	font-size: 4em;
+}
+a i {
+	color: black;
 }
 
 
@@ -315,7 +314,8 @@ footer li a:focus {
 	h1 {
 		font-size: 8em;
 	}
-	article {
+	article, 
+	aside {
 		max-width: 1200px;
 		margin-left: 25%;
 		margin-top: 5%;
@@ -338,7 +338,8 @@ footer li a:focus {
 	h1 {
 		font-size: 6em;
 	}
-	article {
+	article,
+	aside {
 		max-width: 999px;
 		margin-left: 15%;
 		margin-top: 5%;
@@ -361,7 +362,8 @@ footer li a:focus {
 	h1 {
 		font-size: 4em;
 	}
-	article {
+	article,
+	aside {
 		max-width: 650px;
 		margin: 2%;
 		margin-top: 10%;
@@ -369,7 +371,7 @@ footer li a:focus {
 	img {
 		margin: 1% auto;
 		margin-top: 5%;
-		max-width: 480px;
+		max-width: 400px;
 		width: 90vw;
 	}
 	nav li {
