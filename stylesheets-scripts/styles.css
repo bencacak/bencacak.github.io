@@ -91,6 +91,7 @@ h5 {
 	font-weight: bold;
 	color: black;
 	margin: 1% 0;
+	display: inline-block;
 }
 h5 a {
 	color: black;
@@ -234,6 +235,17 @@ nav li a:focus {
 	color: white;
 	text-shadow: -2px -2px black;
 }
+
+/* Article Content */
+
+.section-hover {
+	border: 0;
+	border-radius: 10px;
+	background-color: lightgray;
+	margin: 1%;
+	padding: 1%;
+}
+
 
 /* Index icons */
 aside {
