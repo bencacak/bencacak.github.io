@@ -240,18 +240,6 @@ nav li a:focus {
 	text-shadow: -2px -2px black;
 }
 
-/* Article Content */
-
-.section-hover {
-	border: 0;
-	border-radius: 10px;
-	background-color: lightgray;
-	margin: 1%;
-	padding: 1%;
-  max-width: 800px;
-}
-
-
 /* Index icons */
 aside {
 	text-align: left;
