@@ -248,6 +248,7 @@ nav li a:focus {
 	background-color: lightgray;
 	margin: 1%;
 	padding: 1%;
+  max-width: 800px;
 }
 
 
