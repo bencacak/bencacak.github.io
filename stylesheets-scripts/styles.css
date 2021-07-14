@@ -260,6 +260,7 @@ aside {
 }
 aside ul {
 	margin: 1% 0;
+  max-width: 750px;
 }
 aside li {
 	margin: 2%;
@@ -357,7 +358,7 @@ footer li a:focus {
 	}
 	article,
 	aside {
-		max-width: 999px;
+		max-width: 600px;
 		margin-left: 15%;
 		margin-top: 5%;
 	}
@@ -381,7 +382,7 @@ footer li a:focus {
 	}
 	article,
 	aside {
-		max-width: 650px;
+		max-width: 600px;
 		margin: 2%;
 		margin-top: 10%;
 	}
