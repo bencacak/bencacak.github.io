@@ -111,6 +111,17 @@ p {
 	font-size: 1.15em;
 	max-width: 750px;
 }
+p a {
+  color: black;
+}
+p a:link,
+p a:visited {
+  text-decoration: underline;
+}
+p a:hover,
+p a:active {
+  text-decoration: none;
+}
 em {
   font-style: italic;
 }
